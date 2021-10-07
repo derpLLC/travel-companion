@@ -3,8 +3,9 @@ import {Autocomplete} from '@react-google-maps/api'
 import { AppBar , Toolbar,Typography, InputBase,Box } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search'
 import useStyles from './styles'
+import Switch from "@material-ui/core/Switch";
 
-const Header = ({setCoordinates} ) => {
+const Header = ({setCoordinates,theme,setTheme} ) => {
 
     const classes = useStyles();
 
@@ -13,6 +14,9 @@ const Header = ({setCoordinates} ) => {
     const onLoad = (autoC) => {
         setAutocomplete(autoC);
 
+    }
+    const handleModeChange = () => {
+        setTheme(theme=> !theme)
     }
 
     const onPlaceChanged =  async () => {
@@ -25,11 +29,19 @@ const Header = ({setCoordinates} ) => {
     }
 
     return (
-        <AppBar position="static" >
+        <AppBar position="static" className={theme && classes.root} >
             <Toolbar className={classes.toolbar}>
                 <Typography variant="h5" className={classes.title}>
                     Travel Companion
                 </Typography>
+                <Switch
+                
+                checked={theme}
+                onChange={handleModeChange}
+                name="theme"
+                color="default"
+                />
+
                 <Box display="flex">
                 <Typography variant="h6" className={classes.title}>
                     Explore new places
