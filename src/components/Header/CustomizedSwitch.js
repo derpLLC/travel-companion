@@ -1,6 +1,6 @@
 import React from 'react'
 import FormGroup from '@mui/material/FormGroup';
-import FormControlLabel from '@mui/material/FormControlLabel'
+import { FormControlLabel } from '@mui/material';
 import MaterialUISwitch from './MUISwitch';
 
 

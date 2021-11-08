@@ -68,7 +68,7 @@ const App = () => {
         }
     }, [type, bounds])
 
-   // console.log('Places : ' ,places)
+    //console.log('Places : ' ,places)
    // console.log('Filtered Places : ',filteredPlaces)
 
     return (
