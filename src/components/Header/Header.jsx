@@ -4,6 +4,7 @@ import { AppBar , Toolbar,Typography, InputBase,Box } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search'
 import useStyles from './styles'
 import Switch from "@material-ui/core/Switch";
+import CustomizedSwitch from './CustomizedSwitch';
 
 const Header = ({setCoordinates,theme,setTheme} ) => {
 
@@ -23,7 +24,7 @@ const Header = ({setCoordinates,theme,setTheme} ) => {
         const lat = await autocomplete.getPlace().geometry.location.lat();
         const lng = await autocomplete.getPlace().geometry.location.lng();
 
-        console.log('Coordinates of new place : ', {lat, lng});
+       // console.log('Coordinates of new place : ', {lat, lng});
 
         setCoordinates({lat,lng});
     }
@@ -34,13 +35,18 @@ const Header = ({setCoordinates,theme,setTheme} ) => {
                 <Typography variant="h5" className={classes.title}>
                     Travel Companion
                 </Typography>
-                <Switch
+                <Box display="flex" style={{marginRight:"10px"}}>
+                
+                <CustomizedSwitch  checked={theme} onChange={handleModeChange} name="theme" color="default"/>
+              {/* <Switch
                 
                 checked={theme}
                 onChange={handleModeChange}
                 name="theme"
                 color="default"
-                />
+                /> */}
+                </Box>
+
 
                 <Box display="flex">
                 <Typography variant="h6" className={classes.title}>

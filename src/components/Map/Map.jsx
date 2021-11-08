@@ -6,7 +6,6 @@ import Rating from '@material-ui/lab/Rating';
 
 import useStyles from './styles.js';
 import mapStyles from './mapstyles';
-import { useState } from 'react';
 
 const Map = ({setCoordinates,setBounds,coordinates,places,setChildClicked,weatherData} ) => {
 

@@ -1,4 +1,5 @@
 import { React, useEffect, useState } from 'react'
+import './light.css'
 import { CssBaseline, Grid } from '@material-ui/core'
 import Header from './components/Header/Header'
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
@@ -67,8 +68,8 @@ const App = () => {
         }
     }, [type, bounds])
 
-    console.log('Places : ' ,places)
-    console.log('Filtered Places : ',filteredPlaces)
+   // console.log('Places : ' ,places)
+   // console.log('Filtered Places : ',filteredPlaces)
 
     return (
         <>
@@ -86,7 +87,7 @@ const App = () => {
                         setRating={setRating}
                     />
                 </Grid>
-                <Grid item xs={12} md={8}>
+                <Grid item xs={12} md={8} >
                     <Map
                         setCoordinates={setCoordinates}
                         setBounds={setBounds}
