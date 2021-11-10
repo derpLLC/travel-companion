@@ -15,14 +15,18 @@
 ## Screenshots
 ### Light Theme
 <p align="center">
-  <img width="100%" src="assets/screenshots/DesktopScreenLightMode.png?raw=true">
-  <img width="60%" src="assets/screenshots/MobileScreen1LightMode.png?raw=true">
+  <img width="100%" src="assets/screenshots/DesktopScreenLightMode.png?raw=true"></p>
+  <br>
+  <p align="center">
+  <img width="40%" src="assets/screenshots/MobileScreen1LightMode.png?raw=true">
 </p>
 
 ### Dark Theme
 <p align="center">
-  <img width="100%" src="assets/screenshots/DesktopScreenDarkMode.png?raw=true">
-  <img width="60%" src="assets/screenshots/MobileScreen2DarkMode.png?raw=true">
+  <img  width="100%" src="assets/screenshots/DesktopScreenDarkMode.png?raw=true"></p>
+  <br>
+  <p align="center">
+  <img  margin-top="20%" width="40%" src="assets/screenshots/MobileScreen2DarkMode.png?raw=true">
 </p>
 
 
