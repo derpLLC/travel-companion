@@ -76,7 +76,7 @@ const App = () => {
             <CssBaseline />
             <ThemeProvider theme={myTheme}>
             <Header setCoordinates={setCoordinates} theme={theme} setTheme={setTheme} />
-            <Grid container spacing={3} style={{ width: '100%' }  }>
+            <Grid container spacing={3} style={{ width: '100%' , alignSelf:'center',margin:'auto'}  }>
                 <Grid item xs={12} md={4}>
                     <List places={filteredPlaces.length ? filteredPlaces : places}
                         childClicked={childClicked}

@@ -19,7 +19,7 @@ const Map = ({setCoordinates,setBounds,coordinates,places,setChildClicked,weathe
             bootstrapURLKeys={{key:process.env.REACT_APP_GOOGLE_MAPS_API_KEY}}
             defaultCenter={coordinates}
             center={coordinates}
-            defaultZoom={12}
+            defaultZoom={14}
             margin={[50,50,50,50]}
             options={{ disableDefaultUI: true, zoomControl: true, styles: mapStyles }}
             
