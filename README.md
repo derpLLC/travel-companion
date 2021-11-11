@@ -80,7 +80,8 @@ symbol at the top right corner.
 **2.** Clone the forked repository.
 
 ```bash
-git clone https://github.com/<your-github-username>/mernsocial-frontend
+git clone https://github.com/<your-github-username>/travel-companion
+
 ```
 
 **3.** Make a new branch
