@@ -68,7 +68,7 @@ Run the app
 
 ## Contributing
 
-Want to contribute? See if you can [find an issue](https://github.com/derpLLC/mernsocial-frontend/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) you wanna close, then send a PR!
+Want to contribute? See if you can [find an issue](https://github.com/derpLLC/travel-companion/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) you wanna close, then send a PR!
 
 **1.** Fork [this](https://github.com/derpLLC/travel-companion) repository.
 Click on the
